@@ -1,0 +1,926 @@
+<html xmlns="http://www.w3.org/TR/REC-html40">
+
+<head>
+
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        crossorigin="anonymous">
+
+    <style>
+        body {
+            font-size: small;
+            /* padding-left: 1em;
+            padding-right: 1em; */
+        }
+
+        #header-col1 {
+            padding: 12px;
+            padding-left: 24px;
+            background-color: white;
+        }
+
+        #col2 {
+            background-color: rgb(241, 241, 241);
+            background-color: rgb(156, 182, 203, 0.1);
+            background-color: steelblue;
+            color: white;
+        }
+
+        #header-col2 {
+            background-color: steelblue;
+        }
+
+        .right {
+            /* background-color: rgb(241, 241, 241); */
+            /*background-color: rgb(156, 182, 203, 0.3);*/
+            padding: 0.5em;
+            padding-left: 12px;
+            padding-right: 12px;
+            margin-top: 1em;
+        }
+
+        .right p,
+        .right div {
+            padding: 0;
+        }
+
+        .title {
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            /* font-size: xx-large; */
+            text-transform: uppercase;
+            padding-left: 24px;
+            font-size: 4vh;
+        }
+
+        /* .row {
+            padding-left: 1em;
+
+        } */
+
+        .title-2 {
+            padding: 3px;
+            padding-left: 12px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: x-large;
+            text-transform: uppercase;
+            color: white;
+            background-color: steelblue;
+            /* margin-bottom: 0.25em; */
+            line-height: 1.0em;
+        }
+
+        h3 {
+            font-size: large;
+        }
+
+        ul,
+        .ul {
+            margin-left: 1.5em;
+        }
+
+        .li {
+            margin-left: 0.5em;
+
+        }
+
+        .li2 {
+            margin-left: 1em;
+
+        }
+
+        .blue,
+        .dates,
+        li,
+        .li {
+            color: steelblue;
+        }
+
+        .white {
+            color: white;
+        }
+
+        #col2 .blue {
+            color: rgb(41, 63, 81);
+        }
+
+        #col2 .dates {
+            color: white;
+        }
+
+        .dates {
+            margin-bottom: 0.5em;
+        }
+
+        #col1 .dates {
+            writing-mode: vertical-lr;
+            transform: rotate(180deg);
+            position: relative;
+            float: left;
+            zzzwidth: 12em;
+            font-size: x-large;
+
+            left: 0px;
+            margin-top: 5px;
+            /* margin-bottom:auto; */
+            color: lightgray;
+
+            line-height: 1.2em;
+        }
+
+        #col1 .dates+div {
+            margin-left: 2em;
+        }
+
+        .li:before {
+            content: "• ";
+        }
+
+        #title-firstname {
+            fill: black;
+        }
+
+        #title-lastname {
+            /* color: rgb(241, 241, 241);
+            color : lightgray; */
+            fill: rgb(40, 72, 97);
+        }
+
+        #skills-wordcloud img {
+            padding: 0px;
+        }
+
+        .container-fluid {
+            #border: 1px solid black
+        }
+
+        .technos {
+            font-style: italic;
+            margin-top: 1em;
+        }
+
+        .darker {
+            background-color: gray;
+        }
+
+        .zzdarker {
+            background-color: #e0e0e0;
+            color: gray;
+        }
+
+        .dark {
+            background-color: rgb(241, 241, 241);
+        }
+
+        .area {
+            color: gray;
+            display: inline;
+            width: auto;
+            padding: 0px;
+            font-style: italic;
+        }
+
+        .xp {
+            margin-top: 1em;
+            zzzmargin-bottom: 1em;
+            padding-bottom: 0.8em;
+            padding-right: 6px;
+            /* background-color: #f7f7f7; */
+            margin-left: 0;
+            /* padding-left: 1.5em;
+            padding-right: 0.5em; */
+            /* border: 0.5em solid #f7f7f7; */
+            border: 0.5em solid rgb(247, 247, 247, 0.0);
+            border-top: 0.4em solid rgb(247, 247, 247, 0.0);
+            /*border as a false padding*/
+            border-bottom: thin solid rgb(70, 130, 170, 0.5);
+            vertical-align: top;
+        }
+
+        .xp * span {
+            padding-right: 6px
+        }
+
+        b {
+            display: inline;
+        }
+
+        .job {
+            font-size: 1.5em;
+            color: white;
+            padding: 0.1em;
+            padding-left: 0px;
+            margin-left: 12px;
+            padding-right: 0px;
+            margin-right: 6px;
+        }
+
+        #jobs {
+            padding-top: 5px;
+            margin-top: calc(-1 * var(--bs-gutter-y));
+            margin-right: calc(-.5 * var(--bs-gutter-x));
+            margin-left: calc(-.5 * var(--bs-gutter-x));
+        }
+
+        svg {
+            top: 50%;
+        }
+
+        text {
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            /* font-size: xx-large; */
+            text-transform: uppercase;
+        }
+
+        #contact-content {
+            font-size: medium;
+        }
+
+        #contact-content a.white {
+            font-size: 0.75em;
+        }
+
+        #profile-content {
+            padding: 19px;
+            font-style: italic;
+            font-size: medium;
+        }
+
+        #profile-content h5 {
+            margin-left: -6px;
+            padding-left: 0px;
+            font-size: 1.20rem;
+        }
+
+        #profile-content ul {
+            margin-left: 0px;
+        }
+
+        #profile-content li {
+            margin-left: 24px;
+            color: inherit;
+        }
+
+        #education-content div {
+            margin-bottom: 6px;
+            margin-right: 6px;
+            padding-left: 0px;
+        }
+
+
+        #education-content div.separator-below {
+            border-bottom: thin solid rgb(26, 47, 64);
+            /* padding-bottom: 10px; */
+            margin-top: 12px;
+            margin-bottom: 12px;
+        }
+
+        .education-item {
+            padding-left: 0px;
+            padding-right: 2px;
+        }
+
+        .education-precision {
+            color: rgb(197, 225, 247);
+            font-style: italic;
+        }
+
+        .language-comments::before {
+            zzzcontent: " - ";
+        }
+
+        #languages-content>.progress-box {
+            margin-bottom: 12px;
+        }
+
+        .language-comments {
+            font-style: italic;
+            font-size: smaller;
+            color: lightgray;
+        }
+
+        #wordcloud {
+            margin-top: 1.25em;
+        }
+
+        @media print {
+
+            xp, 
+            * .progress-box,
+            .darker {
+                break-inside: avoid;
+                page-break-inside: avoid;
+
+            }
+
+            .progress-box div {
+                font-size: small;
+            }
+
+            a {
+                font-size: medium;
+            }
+
+            #profile-content {
+                font-size: small;
+            }
+
+            .break-page-after {
+                page-break-after: always;
+            }
+
+
+
+            #contact-content {
+                margin-top: 10px;
+            }
+
+            #contact-content p {
+                margin-bottom: 7px;
+            }
+
+            #wordcloud {
+                margin-top: 1.5em;
+                margin-left: auto;
+                margin-right: auto;
+                max-width: 81%;
+                max-height: 81%;
+            }
+
+            .hide-at-print {
+                display: none;
+            }
+
+            .no-separator-after-at-print {
+                border-bottom: none;
+            }
+
+            .container-fluid.xp {
+                margin-top: 0.7em;
+            }
+        }
+    </style>
+
+    <style>
+        /* .wrapper {
+            width: 500px;
+        } */
+
+        .progress-box {
+            padding-top: 9px;
+            color: white;
+            font-size: medium;
+        }
+
+        .progress-box div:first-child {
+            break-inside: avoid;
+        }
+
+        .progressbar {
+            width: 100%;
+            height: 4px;
+            background-color: #e0e0e0;
+            background-color: rgb(156, 182, 203, 0.8);
+            zzzpadding: 3px;
+            border-radius: 3px;
+            box-shadow: inset 0 1px 3px rgba(0, 0, 0, .2);
+        }
+
+        .progressbar-fill {
+            display: block;
+            height: 4px;
+            background-color: white;
+            background-color: rgb(197, 225, 247);
+            border-radius: 3px;
+
+            transition: width 500ms ease-in-out;
+        }
+    </style>
+
+</head>
+
+<body bgcolor="#E6E6E6">
+    <div class="container-fluid" class="root">
+        <div class="row zzzjustify-content-md-center">
+            <div id="header-col1" class="darker col-9 justify-content-md-left">
+
+                <svg width="256px" height="78px">
+                    <text transform="scale(1, 2.56)" x="0" y="15" textLength="100%" lengthAdjust="spacingAndGlyphs"
+                        id="title-firstname">Alexandre</text>
+                    <text transform="scale(1, 2.56)" x="0" y="30" textLength="100%" lengthAdjust="spacingAndGlyphs"
+                        id="title-lastname">Borgoltz</text>
+                </svg>
+
+                <img src="big-blog-conseil-transparent.png" id="img-logo" height="92px"
+                    style="float:right;zmargin-top:10px;background-color:white;">
+            </div>
+            <div id="header-col2" class="col-3">
+
+
+                <div id="jobs" zzzclass="row">
+                    <div id="job-top" class="job separator-below">Tech Lead</div>
+                    <div id="job-middle" class="job separator-below">Tech Project Manager</div>
+                    <div id="job-bottom" class="job">Consultant</div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="row zzzjustify-content-md-center">
+            <div id="col1" class="col-9">
+                <div id="profile-title" class="title-2 row">Profile</div>
+            </div>
+            <div id="col2" class="col-3">
+                <div id="contact-title" class="title-2 darker row">Contact</div>
+            </div>
+        </div>
+
+
+        <div class="row zzzjustify-content-md-center">
+            <div id="col1" class="col-9">
+                <div id="profile-content" class="row">
+                    <h5>Experienced tech team leader looking for a challenging project and/or a first professional
+                        experience with AI.</h5>
+                    <!-- <div class="ul"> -->
+                    Often referred to as a "Swiss army knife", with experience in
+
+                    <span class="li">native and web dev / software engineering setup / (Big) data management </span>
+                    <span class="li">Consultancy / Senior dev / Tech lead / Architecture / Project management</span>
+                    <!-- </div> -->
+
+                    <!-- <div class="ul"> -->
+                    Autonomous, fast-learner, keen on innovative technologies
+                    <br />
+                    Google certification for Tensorflow / Self starter on AI technology
+                    <br />
+                    Freelance contractor since 2008, looking for a remote-first position
+                    <!-- </div> -->
+                </div>
+
+            </div>
+            <div id="col2" class="col-3">
+                <div id="contact-content" class="right row">
+                    <p>
+                        <!-- &#128232; -->
+                        <nobr><b>@</b> <a class="white"
+                                href="mailto:alexandre.borgoltz@jeevaneo.fr">alexandre.borgoltz@jeevaneo.fr</a></nobr>
+                    </p>
+                    <p>
+                        <!-- &#128379; -->
+                        <nobr><b>&#9990;</b>&nbsp;&nbsp;<span class="white">+33 6 2200 1075</span></nobr>
+                    </p>
+                    <!-- <p>
+                        <b style="font-size: medium;">&#9872;</b> &nbsp; French citizen
+                    </p> -->
+                    <p>
+                        <b style="font-size: larger;">&#x2302;</b> &nbsp; Based in France
+                    </p>
+                    <p>
+                        <b style="font-size: larger;">&check;</b>&nbsp; Open to remote work
+                    </p>
+
+                </div>
+            </div>
+        </div>
+
+
+        <div class="row zzzjustify-content-md-center">
+            <div id="col1" class="col-9">
+                <div id="experience" class="title-2 row">Work Experience - Summary</div>
+            </div>
+            <div id="col2" class="col-3">
+                <div id="skills-title" class="title-2 darker row">Skills</div>
+            </div>
+        </div>
+
+
+        <div class="row zzzjustify-content-md-center">
+            <div id="col1" class="col-9">
+
+
+                <div class="container-fluid xp no-separator-after-at-print">
+                    <div class="row">
+                        <div class="col-sm mb-2">
+                            <!-- <ul> -->
+                            <h6>I have been</h6>
+                            <div class="li">a Project Manager</div>
+                            <div class="li">the CTO of a startup that raised 12M€</div>
+                            <div class="li">a Consultant for french leading companies</div>
+                            <div class="li">a Tech Leader / Architect for projects up to 20 members and 6500 man.days.
+                            </div>
+                            <!-- </ul> -->
+                        </div>
+                        <div class="col-sm">
+                            <!-- <ul> -->
+                            <h6>I have worked on</h6>
+                            <div class="li">fast-paced agile projects</div>
+                            <div class="li">long-term core projects</div>
+                            <div class="li">prototypes</div>
+                            <div class="li">software engineering</div>
+                            <div class="li">audit</div>
+                            <!-- </ul> -->
+                        </div>
+                        <div class="w-100 d-none d-sm-block"></div>
+                        <div class="col-sm">
+                            <!-- <ul> -->
+                            <h6>I have experience on</h6>
+                            <div class="li">web-oriented dev</div>
+                            <div class="li">desktop/native dev</div>
+                            <div class="li">big data dev</div>
+                            <div class="li">AI</div>
+                            <div class="li">software engineering</div>
+                            <div class="li">RDBMS</div>
+                            <!-- </ul> -->
+                        </div>
+                        <div class="col-sm">
+                            <!-- <ul> -->
+                            <h6>I am</h6>
+                            <div class="li">versatile</div>
+                            <div class="li">adaptable</div>
+                            <div class="li">a fast learner</div>
+                            <div class="li">reliable</div>
+                            <div class="li">involved</div>
+                            <div class="li">a team worker</div>
+                            <!-- </ul> -->
+                        </div>
+                    </div>
+                    <!-- <div class="row break-page-after">
+                        <img id="wordcloud" src="wordcloud5.webp" class=".no-separator-after-at-print" />
+                    </div> -->
+                </div>
+
+                <div id="experience" class="title-2 row">Work Experience - Details</div>
+
+
+                <div class="container-fluid xp break-page-after no-separator-after-at-print">
+                    <h3 class="row">Tech lead <span class="area"><b class="blue">&nbsp;|&nbsp;</b>Desktop + web</span>
+                    </h3>
+                    <div class="dates row">2018-2021</div>
+                    <div class="row">The main application on 10,000+ end-users desktops was a proprietary native
+                        executable.
+                        Re-organize its maintainance in an agile manner to reduce the MTTR from 3 months to under 1 day.
+                        Then replace it with a customized standard web browser. This entails
+                        <!-- <div class="ul"> -->
+                        <span class="li">Impacts in legacy applications and software</span>
+                        <span class="li">Setup of front- and backend java apps + storage</span>
+                        <span class="li">Dev of a Firefox webextension</span>
+                        <span class="li">Some MSWindows-native dev</span>
+                        <!-- </div> -->
+                    </div>
+                    <div class="technos row">Java | spring | react.js | mongoDB | C# | win32 | powershell | Go | ELK |
+                        docker /
+                        Firefox webext | Scrum
+                    </div>
+                </div>
+
+                <div class="container-fluid xp">
+                    <h3 class="row">Tech Lead + Architect <span class="area"><b class="blue">&nbsp;|&nbsp;</b>Big
+                            Data</span>
+                    </h3>
+                    <div class="dates row">2016-2018</div>
+                    <div class="row">Design and setup the enterprise’s datalake : on-premice 70+ worker hadoop cluster +
+                        industrialize data ingest + prototype use cases
+                        Coordinate a multi-field group of experts. Lead to major impacts on
+                        <!-- <div class="ul"> -->
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col">
+                                        <div class="li">Network setup</div>
+                                        <div class="li">Buying strategies</div>
+                                        <div class="li">Procedures and roles</div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="li">Hardware choices</div>
+                                        <div class="li">Data management</div>
+                                        <div class="li">Governance</div>
+                                    </div>
+                                </div>
+                            </div>
+                        <!-- </div> -->
+                    </div>
+                    <div class="technos row">Java | scala | python | spark | map-reduce | hortonworks
+                    </div>
+                </div>
+
+                <div class="container-fluid xp">
+                    <h3 class="row">Tech Lead + Architect <span class="area"><b class="blue">&nbsp;|&nbsp;</b>Elasticsearch</span>
+                    </h3>
+                    <div class="dates row">2016</div>
+                    <div class="row">Design and setup the enterprise’s ES cluster and near real-time data indexing
+                        <!-- <div class="ul"> -->
+                        <div class="li">Cluster scaled for performance</div>
+                        <div class="li">Complex indexing automated from models of incoming and indexed data structures</div>
+                        <div class="li">Used by other systems as a fast, central, readonly, up-to-date cross-functional data source </div>                        
+
+                        <!-- </div> -->
+                    </div>
+                    <div class="technos row">Elasticsearch | Java | Eclipse EMF| JMS | Kafka | Oracle
+                    </div>
+                </div>
+
+                <div class="container-fluid xp">
+                    <h3 class="row">Architect + Tech lead<span class="area"><b class="blue">&nbsp;|&nbsp;</b>Software
+                            engineering</span>
+                    </h3>
+                    <div class="dates row">2011-2015</div>
+                    <div class="row">Design and setup the enterprise’s engineering tool suite for managing 1,000+ apps
+                        w/ 35,000+ components artifacts with their versions and their deployment.
+
+                        <div class="li">involved IT managers, urban planning team, ops, projects and support teams in the conception</div>
+                        <div class="li">40% decrease in component-incompatibility related bugs</div>
+                        <div class="li">drastic reduction in time needed for preparing a release</div>
+                        <div class="li">huge reduction in cost of managing multiple environments</div>
+                        <div class="li">allowed for a better overall time-to-market by allowing intermediate releases every month</div>
+
+                        <!-- Overview : Binaries and their metadata kept in a Nexus repository. 
+                        The suite allows for easy configuration of enterprise-wide versions (which themselves are assemblies of specific/compatible versions of the many components/binaries) and lets the user prepare/trigger/trace the delivery of (combination of) components to any environment and list every component’s version in every environment.
+                        It is interfaced with build systems and the enterprise’s proprietary deployment suite. 
+                        Metadata are indexed in an elasticsearch cluster for fast querying.Eclipse RCP+EMF fluid and intuitive GUI allows for real-time multi-user collaboration.
+                        Backed by eclipse CDO DB interface and opened to interop through REST API. -->
+                    </div>
+                    <div class="technos row">Java | Eclipse RCP + EMF | Eclipse CDO | mySQL DB | Elasticsearch | Sonatype Nexus | REST | Tomcat
+                    </div>
+                </div>
+
+                <div class="container-fluid xp">
+                    <h3 class="row">Expert <span class="area"><b class="blue">&nbsp;|&nbsp;</b>
+                            Win32 dev</span>
+                    </h3>
+                    <div class="dates row">2011</div>
+                    <div class="row">
+                        <span><b>Problem : </b>7,000+ users encountering instability and crashes of their main application.</span>
+                        <span><b>Fix : </b>Divide the number of crashes by 10 through isolation of embedded MS WebBrowser and Adobe Acrobat Reader components in separate multiple processes.</span>
+                        
+                        <!-- <div class="ul"> -->
+                        <span class="li">Multi-process architecture</span>
+                        <span class="li">Written a framework for manipulating remote processes through java calls.</span>
+                    </div>
+                    <div class="technos row">COM/DCOM | Win32 | Delphi | Java</div>
+                </div>
+
+                <div class="container-fluid xp break-page-after no-separator-after-at-print">
+                    <h3 class="row">Consultant <span class="area"><b class="blue">&nbsp;|&nbsp;</b>Redesign core legacy
+                            software</span>
+                    </h3>
+                    <div class="dates row">2010-2011</div>
+                    <div class="row">
+                        <span>As part of a multi-expert team, propose then develop the target architecture,
+                            framework and engineering for replacing the legacy COBOL/Tuxedo/Delphi P&C core
+                            business.</span>
+                        <!-- <div class="ul"> -->
+                        <span class="li">Proposed SOA architecture</span>
+                        <span class="li">Prototyped java frameworks for UI, services routing and orchestration, data
+                            access</span>
+                        <span class="li">Addressed security and performance</span>
+                        <span class="li">Setup Source Versionning (SVN) and automated Continuous Integration</span>
+                        <!-- </div> -->
+                    </div>
+                    <div class="technos row">Java | Spring | XML+XSD+WSDL | RichFaces | maven | Ruby /Oracle | SVN |
+                        Hudson(Jenkins)</div>
+                </div>
+
+                <div class="container-fluid xp">
+                    <h3 class="row">Architect + Project manager <span class="area"><b class="blue">&nbsp;|&nbsp;</b>
+                            Unifying UIs on the desktop</span>
+                    </h3>
+                    <div class="dates row">2006-2009</div>
+                    <div class="row">
+                        <span><b>Context : </b>6,000+ users had worked with a legacy single fullscreen delphi app
+                            desktop for
+                            years.</span>
+                        <span><b>Goal : </b>Mitigate the multiplication of applications on the desktop (wether native,
+                            web, proprietary or in-house : CRM, software telephony, BPM, partner apps…)</span>
+                        <span><b>Means : </b>develop an innovative « super browser » that can host both native and web
+                            apps into a single window, letting apps share a context.</span>
+
+                        <!-- <div class="ul"> -->
+                        <span class="li">Ergonomical and architectural study</span>
+                        <span class="li">Technology selection through concurrent prototypes</span>
+                        <span class="li">Integration with various technologies</span>
+                        <span class="li">Scaling for performance</span>
+                        <span class="li">Deployment</span>
+                        <span class="li">Setup SVN and continuous integration and automated build</span>
+                        <span class="li">Managing budget and planning</span>
+                        <!-- </div> -->
+                    </div>
+                    <div class="technos row">Java | OSGi | Eclipse RCP | VC++ | Win32 | Delphi | C# | Cruise
+                        Control | SVN | Spring framework | LDAP</div>
+                </div>
+
+                <div class="container-fluid xp zzzbreak-page-after">
+                    <h3 class="row">Head of Technology<span class="area"><b class="blue">&nbsp;|&nbsp;</b>
+                            SmartJog.com</span>
+                    </h3>
+                    <div class="dates row">2002-2006</div>
+                    <div class="row">
+                        <span><b>Context : </b>SmartJog was a startup that raised 12M€ in 3 rounds for digitalizing the
+                            market of media assets
+                            through secure file transfer via satellyte.</span>
+                        <span><b>Clients : </b>Major film studios (Paramount, Sony, Walt Disney, 20th century Fox...)
+                            and TV channels across the world (BBC, TF1, Canal+, ZDF, CCTV...).</span>
+                        <span><b>My mission : </b>Responsible for the software dev team - 8 members.</span>
+
+                        <!-- <div class="ul"> -->
+                        <span class="li">Report to the CEO</span>
+                        <span class="li">Define strategies and directions</span>
+                        <span class="li">Direct relations with partner CTOs for technical integration</span>
+                        <span class="li">Recruit and manage devs and ops</span>
+                        <span class="li">Architect and tech lead</span>
+                        <span class="li">Monitor technology development</span>
+                        <!-- </div> -->
+                        <span><b>Achievements : </b>Built a successful, innovative web-based secure platform that
+                            let</span>
+                        <span class="li">Major studios upload media assets and manage their catalogue online </span>
+                        <span class="li">TV Channels order videos through satellyte and screen them in the browser
+                        </span>
+
+                    </div>
+                    <div class="technos row">Java | JSP | XML+XSLT | EJB 3 | Hibernate | Oracle + intermedia then
+                        postgresql | CVS | WebServices /IBM WebSphere then tomcat | Eclipse RCP | LDAP</div>
+                </div>
+
+                <div class="container-fluid xp no-separator-after-at-print">
+                    <h3 class="row">Developper<span class="area"><b class="blue">&nbsp;|&nbsp;</b>
+                            Unilog / CGI</span>
+                    </h3>
+                    <div class="dates row">2001-2002</div>
+                    <div class="row">
+                        <span><b>Context : </b>Unilog was a french leading Consultancy company - since then acquired by
+                            CGI.</span>
+                        <span><b>Clients : </b>Bank, insurance, pharmceuticals, telecom.</span>
+                        <span><b>My mission : </b>Developper then lead developper on various projects.</span>
+
+                        <!-- <div class="ul"> -->
+                        <span class="li">Design and develop intranet and web portals</span>
+                        <span class="li">Design create and maintain relational DB models.</span>
+                        <span class="li">Implement documentary search engines</span>
+                        <span class="li">Setup content management systems</span>
+                        <span class="li">Monitor technology development</span>
+                        <!-- </div> -->
+                    </div>
+                    <div class="technos row">Java | JSP | XML+XSLT | servlet | Oracle | CVS | Vignette | ATG Dynamo |
+                        Documentum WebPublisher | IBM WebSphere | Weblogic | Eclipse RCP | Swing | Ant</div>
+                </div>
+
+            </div>
+            <div id="col2" class="col-3">
+
+
+
+                <!-- <div id="skills-wordcloud" class="right row">
+                    <img src="wordcloud-light.webp" />
+                </div> -->
+                <!-- <div id="skills-content" class="right blue row"></div> -->
+                <div class="progress-box" width="100%">
+                    <div>Java</div>
+                    <div class="progressbar"><span class="progressbar-fill" style="width: 95%;"></span></div>
+                </div>
+                <div class="progress-box">
+                    <div>SQL</div>
+                    <div class="progressbar"><span class="progressbar-fill" style="width: 90%;"></span></div>
+                </div>
+                <div class="progress-box">
+                    <div>Powershell</div>
+                    <div class="progressbar"><span class="progressbar-fill" style="width: 85%;"></span></div>
+                </div>
+                <div class="progress-box">
+                    <div>Spark (java)</div>
+                    <div class="progressbar"><span class="progressbar-fill" style="width: 80%;"></span></div>
+                </div>
+                <div class="progress-box">
+                    <div>ELK</div>
+                    <div class="progressbar"><span class="progressbar-fill" style="width: 80%;"></span></div>
+                </div>
+                <div class="progress-box">
+                    <div>HTML</div>
+                    <div class="progressbar"><span class="progressbar-fill" style="width: 75%;"></span></div>
+                </div>
+                <div class="progress-box">
+                    <div>Javascript</div>
+                    <div class="progressbar"><span class="progressbar-fill" style="width: 75%;"></span></div>
+                </div>
+                <div class="progress-box">
+                    <div>Tensorflow/Keras</div>
+                    <div class="progressbar"><span class="progressbar-fill" style="width: 75%;"></span></div>
+                </div>
+                <div class="progress-box">
+                    <div>Map-Reduce</div>
+                    <div class="progressbar"><span class="progressbar-fill" style="width: 75%;"></span></div>
+                </div>
+                <div class="progress-box">
+                    <div>Linux shell</div>
+                    <div class="progressbar"><span class="progressbar-fill" style="width: 75%;"></span></div>
+                </div>
+                <div class="progress-box">
+                    <div>NoSQL (mongoDB)</div>
+                    <div class="progressbar"><span class="progressbar-fill" style="width: 75%;"></span></div>
+                </div>
+                <div class="progress-box">
+                    <div>Spring framework</div>
+                    <div class="progressbar"><span class="progressbar-fill" style="width: 66%;"></span></div>
+                </div>
+                <div class="progress-box">
+                    <div>CSS</div>
+                    <div class="progressbar"><span class="progressbar-fill" style="width: 65%;"></span>
+                    </div>
+                </div>
+                <div class="progress-box">
+                    <div>Win32 (low level API)</div>
+                    <div class="progressbar"><span class="progressbar-fill" style="width: 60%;"></span></div>
+                </div>
+                <div class="progress-box">
+                    <div>Spark (scala)</div>
+                    <div class="progressbar"><span class="progressbar-fill" style="width: 60%;"></span></div>
+                </div>
+                <div class="progress-box">
+                    <div>Py-spark</div>
+                    <div class="progressbar"><span class="progressbar-fill" style="width: 55%;"></span></div>
+                </div>
+                <div class="progress-box">
+                    <div>Python</div>
+                    <div class="progressbar"><span class="progressbar-fill" style="width: 55%;"></span></div>
+                </div>
+                <div class="progress-box">
+                    <div>Delphi</div>
+                    <div class="progressbar"><span class="progressbar-fill" style="width: 50%;"></span></div>
+                </div>
+                <div class="progress-box">
+                    <div>GOlang</div>
+                    <div class="progressbar"><span class="progressbar-fill" style="width: 50%;"></span></div>
+                </div>
+                <div class="progress-box break-page-after">
+                    <div>Flutter/dart</div>
+                    <div class="progressbar"><span class="progressbar-fill" style="width: 40%;"></span></div>
+                </div>
+                <div class="hide-at-print">&nbsp;</div>
+
+                <!-- </div> -->
+                <div id="education-title" class="title-2 darker row">Education</div>
+                <div id="education-content" class="right row">
+                    <!-- <div class="container-fluid xp"> -->
+                    <div class="dates zzrow">2022</div>
+                    <h3 class="education-item">Google certified Tensorflow Developper</h3>
+                    <div class="separator-below"></div>
+
+                    <!-- <div class="container-fluid xp"> -->
+                    <div class="dates zzrow">2015</div>
+                    <h3 class="education-item">Hadoop Advanced Developper</h3>
+                    <div class="education-precision">Cloudera certification training</div>
+                    <div class="separator-below"></div>
+
+                    <!-- </div> -->
+                    <!-- <div class="container-fluid xp"> -->
+                    <div class="dates zzrow">2001</div>
+                    <h3 class="education-item">Engineering degree + <br />Master's degree</h3>
+                    <div class="education-precision">Computer Science and Cognitive Sciences</div>
+                    <div zzzclass="row"><b>E</b>cole <b>I</b>nternationale des <b>S</b>ciences du <b>T</b>raitement de
+                        l'<b>I</b>nformation
+                        <br />(<i>aka</i> <a class="blue" href="https://cytech.cyu.fr/">CY Tech / Paris University</a>)
+                    </div>
+                    <!-- </div> -->
+                </div>
+                <div id="languages-title" class="title-2 darker row">Spoken languages</div>
+                <div id="languages-content" zzzclass="right row " class="break-page-after">
+                    <!-- <div>&nbsp;</div> -->
+                    <div class="progress-box">
+                        <div>French </div>
+                        <div class="language-comments">mother tongue</div>
+                        <div class="progressbar"><span class="progressbar-fill" style="width: 100%;"></span></div>
+                    </div>
+                    <div class="progress-box">
+                        <div>English </div><span class="language-comments">professional working w/ excellent reading and
+                            writing</span>
+                        <div class="progressbar"><span class="progressbar-fill" style="width: 75%;"></span></div>
+                    </div>
+                    <div class="progress-box">
+                        <div>Spanish </div>
+                        <div class="language-comments">elementary</div>
+                        <div class="progressbar"><span class="progressbar-fill" style="width: 25%;"></span></div>
+                    </div>
+                    <div class="progress-box">
+                        <div>German </div>
+                        <div class="language-comments">elementary</div>
+                        <div class="progressbar"><span class="progressbar-fill" style="width: 25%;"></span></div>
+                    </div>
+                    <div class="progress-box">
+                        <div>Italian </div>
+                        <div class="language-comments">elementary</div>
+                        <div class="progressbar"><span class="progressbar-fill" style="width: 25%;"></span></div>
+                    </div>
+
+                    <div>&nbsp;</div>
+                </div>
+                <div id="hobbies-title" class="title-2 darker row">Hobbies</div>
+                <div id="hobbies-content" class="right row">
+                    <div zzzclass="row">
+                        Bee keeping, Sport, Travel, Electronic DIY, Maths, Programming, Cooking...
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
