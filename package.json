@@ -1,0 +1,25 @@
+{
+  "name": "resume-alexandre-borgoltz",
+  "version": "1.0.0",
+  "description": "Alexandre Borgoltz's resume",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "node index.js",
+    "gen_chrome": "\"C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe\" --headless --run-all-compositor-stages-before-draw --print-to-pdf-no-header  --no-margins --print-to-pdf=out2.pdf --disable-gpu resume.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Highbrainer/resume.git"
+  },
+  "keywords": [
+    "resume"
+  ],
+  "author": "Alexandre Borgoltz",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Highbrainer/resume/issues"
+  },
+  "homepage": "https://github.com/Highbrainer/resume#readme",
+  "devDependencies": {}
+}
