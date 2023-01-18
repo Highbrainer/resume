@@ -301,13 +301,13 @@
         }
 
         @page {
-        /*size: 8.5in 9in;*/
+            /*size: 8.5in 9in;*/
             margin: 0px;
         }
 
         @media print {
 
-            xp, 
+            xp,
             * .progress-box,
             .darker {
                 break-inside: avoid;
@@ -363,9 +363,14 @@
             }
 
             .job {
-            margin-top: 5px;
-            font-size: 1.3em;
-            margin-right: 0px;
+                margin-top: 5px;
+                font-size: 1.3em;
+                margin-right: 0px;
+            }
+
+            #final-spacer {
+                height: 52px;
+                /* bottom: 100%; */
             }
         }
     </style>
@@ -591,20 +596,20 @@
                         industrialize data ingest + prototype use cases
                         Coordinate a multi-field group of experts. Lead to major impacts on
                         <!-- <div class="ul"> -->
-                            <div class="container">
-                                <div class="row">
-                                    <div class="col">
-                                        <div class="li">Network setup</div>
-                                        <div class="li">Buying strategies</div>
-                                        <div class="li">Procedures and roles</div>
-                                    </div>
-                                    <div class="col">
-                                        <div class="li">Hardware choices</div>
-                                        <div class="li">Data management</div>
-                                        <div class="li">Governance</div>
-                                    </div>
+                        <div class="container">
+                            <div class="row">
+                                <div class="col">
+                                    <div class="li">Network setup</div>
+                                    <div class="li">Buying strategies</div>
+                                    <div class="li">Procedures and roles</div>
+                                </div>
+                                <div class="col">
+                                    <div class="li">Hardware choices</div>
+                                    <div class="li">Data management</div>
+                                    <div class="li">Governance</div>
                                 </div>
                             </div>
+                        </div>
                         <!-- </div> -->
                     </div>
                     <div class="technos row">Java | scala | python | spark | map-reduce | hortonworks
@@ -612,14 +617,17 @@
                 </div>
 
                 <div class="container-fluid xp">
-                    <h3 class="row">Tech Lead + Architect <span class="area"><b class="blue">&nbsp;|&nbsp;</b>Elasticsearch</span>
+                    <h3 class="row">Tech Lead + Architect <span class="area"><b
+                                class="blue">&nbsp;|&nbsp;</b>Elasticsearch</span>
                     </h3>
                     <div class="dates row">2016</div>
                     <div class="row">Design and setup the enterprise’s ES cluster and near real-time data indexing
                         <!-- <div class="ul"> -->
                         <div class="li">Cluster scaled for performance</div>
-                        <div class="li">Complex indexing automated from models of incoming and indexed data structures</div>
-                        <div class="li">Used by other systems as a fast, central, readonly, up-to-date cross-functional data source </div>                        
+                        <div class="li">Complex indexing automated from models of incoming and indexed data structures
+                        </div>
+                        <div class="li">Used by other systems as a fast, central, readonly, up-to-date cross-functional
+                            data source </div>
 
                         <!-- </div> -->
                     </div>
@@ -635,11 +643,13 @@
                     <div class="row">Design and setup the enterprise’s engineering tool suite for managing 1,000+ apps
                         w/ 35,000+ components artifacts with their versions and their deployment.
 
-                        <div class="li">involved IT managers, urban planning team, ops, projects and support teams in the conception</div>
+                        <div class="li">involved IT managers, urban planning team, ops, projects and support teams in
+                            the conception</div>
                         <div class="li">40% decrease in component-incompatibility related bugs</div>
                         <div class="li">drastic reduction in time needed for preparing a release</div>
                         <div class="li">huge reduction in cost of managing multiple environments</div>
-                        <div class="li">allowed for a better overall time-to-market by allowing intermediate releases every month</div>
+                        <div class="li">allowed for a better overall time-to-market by allowing intermediate releases
+                            every month</div>
 
                         <!-- Overview : Binaries and their metadata kept in a Nexus repository. 
                         The suite allows for easy configuration of enterprise-wide versions (which themselves are assemblies of specific/compatible versions of the many components/binaries) and lets the user prepare/trigger/trace the delivery of (combination of) components to any environment and list every component’s version in every environment.
@@ -647,7 +657,8 @@
                         Metadata are indexed in an elasticsearch cluster for fast querying.Eclipse RCP+EMF fluid and intuitive GUI allows for real-time multi-user collaboration.
                         Backed by eclipse CDO DB interface and opened to interop through REST API. -->
                     </div>
-                    <div class="technos row">Java | Eclipse RCP + EMF | Eclipse CDO | mySQL DB | Elasticsearch | Sonatype Nexus | REST | Tomcat
+                    <div class="technos row">Java | Eclipse RCP + EMF | Eclipse CDO | mySQL DB | Elasticsearch |
+                        Sonatype Nexus | REST | Tomcat
                     </div>
                 </div>
 
@@ -657,12 +668,15 @@
                     </h3>
                     <div class="dates row">2011</div>
                     <div class="row">
-                        <span><b>Problem : </b>7,000+ users encountering instability and crashes of their main application.</span>
-                        <span><b>Fix : </b>Divide the number of crashes by 10 through isolation of embedded MS WebBrowser and Adobe Acrobat Reader components in separate multiple processes.</span>
-                        
+                        <span><b>Problem : </b>7,000+ users encountering instability and crashes of their main
+                            application.</span>
+                        <span><b>Fix : </b>Divide the number of crashes by 10 through isolation of embedded MS
+                            WebBrowser and Adobe Acrobat Reader components in separate multiple processes.</span>
+
                         <!-- <div class="ul"> -->
                         <span class="li">Multi-process architecture</span>
-                        <span class="li">Written a framework for manipulating remote processes through java calls.</span>
+                        <span class="li">Written a framework for manipulating remote processes through java
+                            calls.</span>
                     </div>
                     <div class="technos row">COM/DCOM | Win32 | Delphi | Java</div>
                 </div>
@@ -770,6 +784,8 @@
                     <div class="technos row">Java | JSP | XML+XSLT | servlet | Oracle | CVS | Vignette | ATG Dynamo |
                         Documentum WebPublisher | IBM WebSphere | Weblogic | Eclipse RCP | Swing | Ant</div>
                 </div>
+
+                <div id="final-spacer"></div>
 
             </div>
             <div id="col2" class="col-3">
