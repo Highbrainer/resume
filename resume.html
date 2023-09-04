@@ -154,6 +154,13 @@
         .technos {
             font-style: italic;
             margin-top: 1em;
+            word-spacing:-1px;
+        }
+
+        .wide-technos {
+            
+            margin-left: -17px;
+            margin-right: -17px;
         }
 
         .darker {
@@ -304,6 +311,9 @@
             /*size: 8.5in 9in;*/
             margin: 0px;
         }
+        .companies {
+            height: 24px;
+        }
 
         @media print {
 
@@ -325,6 +335,8 @@
 
             #profile-content {
                 font-size: small;
+                padding-top: 7px;
+                padding-bottom: 9px;
             }
 
             .break-page-after {
@@ -359,7 +371,7 @@
             }
 
             .container-fluid.xp {
-                margin-top: 0.7em;
+                margin-top: 0.2em;
             }
 
             .job {
@@ -369,7 +381,7 @@
             }
 
             #final-spacer {
-                height: 52px;
+                height: 64px;
                 /* bottom: 100%; */
             }
         }
@@ -455,20 +467,15 @@
                 <div id="profile-content" class="row">
                     <h5>Experienced tech team leader looking for a challenging project and/or a first professional
                         experience with AI.</h5>
-                    <!-- <div class="ul"> -->
                     Often referred to as a "Swiss army knife", with experience in
 
                     <span class="li">native and web dev / software engineering setup / (Big) data management </span>
                     <span class="li">Consultancy / Senior dev / Tech lead / Architecture / Project management</span>
-                    <!-- </div> -->
-
-                    <!-- <div class="ul"> -->
                     Autonomous, fast-learner, keen on innovative technologies
-                    <br />
+                    <!--br />
                     Google certification for Tensorflow / Self starter on AI technology
                     <br />
-                    Freelance contractor since 2008, looking for a remote-first position
-                    <!-- </div> -->
+                    Freelance contractor since 2008, looking for a remote-first position-->
                 </div>
 
             </div>
@@ -500,7 +507,7 @@
 
         <div class="row zzzjustify-content-md-center">
             <div id="col1" class="col-9">
-                <div id="experience" class="title-2 row">Work Experience - Summary</div>
+                <div id="experience" class="title-2 row">Work Experience<!-- - Summary--></div>
             </div>
             <div id="col2" class="col-3">
                 <div id="skills-title" class="title-2 darker row">Skills</div>
@@ -510,93 +517,87 @@
 
         <div class="row zzzjustify-content-md-center">
             <div id="col1" class="col-9">
-
-
-                <div class="container-fluid xp no-separator-after-at-print">
-                    <div class="row">
-                        <div class="col-sm mb-2">
-                            <!-- <ul> -->
-                            <h6>I have been</h6>
-                            <div class="li">a Project Manager</div>
-                            <div class="li">the CTO of a startup that raised 12M€</div>
-                            <div class="li">a Consultant for french leading companies</div>
-                            <div class="li">a Tech Leader / Architect for projects up to 20 members and 6500 man.days.
-                            </div>
-                            <!-- </ul> -->
-                        </div>
-                        <div class="col-sm">
-                            <!-- <ul> -->
-                            <h6>I have worked on</h6>
-                            <div class="li">fast-paced agile projects</div>
-                            <div class="li">long-term core projects</div>
-                            <div class="li">prototypes</div>
-                            <div class="li">software engineering</div>
-                            <div class="li">audit</div>
-                            <!-- </ul> -->
-                        </div>
-                        <div class="w-100 d-none d-sm-block"></div>
-                        <div class="col-sm">
-                            <!-- <ul> -->
-                            <h6>I have experience on</h6>
-                            <div class="li">web-oriented dev</div>
-                            <div class="li">desktop/native dev</div>
-                            <div class="li">big data dev</div>
-                            <div class="li">AI</div>
-                            <div class="li">software engineering</div>
-                            <div class="li">RDBMS</div>
-                            <!-- </ul> -->
-                        </div>
-                        <div class="col-sm">
-                            <!-- <ul> -->
-                            <h6>I am</h6>
-                            <div class="li">versatile</div>
-                            <div class="li">adaptable</div>
-                            <div class="li">a fast learner</div>
-                            <div class="li">reliable</div>
-                            <div class="li">involved</div>
-                            <div class="li">a team worker</div>
-                            <!-- </ul> -->
-                        </div>
+            
+            
+                <div class="container-fluid xp">
+                    <h3 class="row">Training <span class="area"><b class="blue">&nbsp;|&nbsp;</b>AWS <img src="images/awssk.png" class="companies"></span>
+                    </h3>
+                    <div class="dates row">...</div>
+                    <div class="row"> <span>Learning Amazon's specifics for Cloud Computing through the <i>AWS Skill Builder</i> program.</span>
+                        <span class="li">AWS | IAM | S3 | DynamoDB | RDS | EC2 | ECS | Amazon Lambda</span>
                     </div>
-                    <!-- <div class="row break-page-after">
-                        <img id="wordcloud" src="images/wordcloud5.webp" class=".no-separator-after-at-print" />
-                    </div> -->
+<!--                    <div class="technos row">AWS | IAM | S3 | DynamoDB | RDS | EC2 | ECS | Amazon Lambda</div> -->
+                </div> 
+            
+            <div class="container-fluid xp">
+                    <h3 class="row">Consultant <span class="area"><b class="blue">&nbsp;|&nbsp;</b>HR Data</span>
+                    </h3>
+                    <div class="dates row">2023</div>
+                    <div class="row"> <span>The HR department needs a complex, taylor-made, rule-based planning tool. </span>
+                        <span class="li">Developped a configurable planning engine based on Eclipse EMF.</span>
+                        <span class="li">Integrated with LDAP and MS Office 365 (MS Graph APIs)</span>
+                    </div>
+                    <div class="technos row">Eclipse EMF | MS Graph</div>
+                </div>
+                <div class="container-fluid xp">
+                    <h3 class="row">Consultant <span class="area"><b class="blue">&nbsp;|&nbsp;</b>HR Data</span>
+                    </h3>
+                    <div class="dates row">2023</div>
+                    <div class="row"> <span>The HR department managers need aggregated dashboards despite erratic data sources and lack of tech skills. In the end, managers only had to learn how to use Kibana.</span>
+                        <span class="li">Setup a generic ETL utility to read various file formats, transform and export to Kibana</span>
+                        <!--span class="li">Results are automatically made available to Kibana dashboards.</span-->
+                        <!--span class="li">The java application is compiled into a native executable throush GraalVM.</span-->                        
+                    </div>
+                    <div class="technos row">Java | GraalVM | JDBC | Elasticsearch | Kibana</div>
+                </div>
+                          
+
+                <div class="container-fluid xp">
+                    <h3 class="row">Training <span class="area"><b class="blue">&nbsp;|&nbsp;</b>Machine Learning <img src="images/cnrs.png" class="companies"> <img src="images/coursera.png" class="companies"> <img src="images/google.png" class="companies"></span>
+                    </h3>
+                    <div class="dates row">2022</div>
+                    <div class="row"> 
+                        <span class="li">I followed french CNRS's FIDLE training about Deep Learning.</span>
+                        <span class="li">I completed Google's course curriculum for Tensorflow Developpers (mostly Keras).</span>
+                        <span class="li">I passed Google's "Tensorflow developper" certification</span>
+                    </div>
+                    <div class="technos row">python | tensorflow | Keras | DNN | RNN | VAE</div>
                 </div>
 
-                <div id="experience" class="title-2 row">Work Experience - Details</div>
-
-
-                <div class="container-fluid xp break-page-after no-separator-after-at-print">
-                    <h3 class="row">Tech lead <span class="area"><b class="blue">&nbsp;|&nbsp;</b>Desktop + web</span>
+                <div class="container-fluid xp no-separator-after-at-print break-page-after ">
+                    <h3 class="row">Tech lead <span class="area"><b class="blue">&nbsp;|&nbsp;</b>Desktop + web <img src="images/maif.png" class="companies"></span>
                     </h3>
                     <div class="dates row">2018-2021</div>
                     <div class="row">The main application on 10,000+ end-users desktops was a proprietary native
                         executable.
                         Re-organize its maintainance in an agile manner to reduce the MTTR from 3 months to under 1 day.
                         Then replace it with a customized standard web browser. This entails
-                        <!-- <div class="ul"> -->
                         <span class="li">Impacts in legacy applications and software</span>
                         <span class="li">Setup of front- and backend java apps + storage</span>
-                        <span class="li">Dev of a Firefox webextension</span>
-                        <span class="li">Some MSWindows-native dev</span>
-                        <!-- </div> -->
+                        <span class="li">Native dev in Go, Firefox webextension and MS Windows apis (C# and Powershell)</span>
                     </div>
-                    <div class="technos row">Java | spring | react.js | mongoDB | C# | win32 | powershell | Go | ELK |
-                        docker /
-                        Firefox webext | Scrum
+                    <div class="technos row wide-technos">Java | spring | react.js | mongoDB | C# | win32 | powershell | Go | ELK |
+                        docker | Firefox webext | Scrum
                     </div>
                 </div>
 
                 <div class="container-fluid xp">
                     <h3 class="row">Tech Lead + Architect <span class="area"><b class="blue">&nbsp;|&nbsp;</b>Big
-                            Data</span>
+                            Data <img src="images/maif.png" class="companies"></span>
                     </h3>
                     <div class="dates row">2016-2018</div>
                     <div class="row">Design and setup the enterprise’s datalake : on-premice 70+ worker hadoop cluster +
-                        industrialize data ingest + prototype use cases
-                        Coordinate a multi-field group of experts. Lead to major impacts on
-                        <!-- <div class="ul"> -->
-                        <div class="container">
+                        industrialize data ingest + prototype AI use cases
+                        As part of a multi-field group of experts. 
+<!--
+                        <span class="li">Developped a Domain-Driven back-office application based on Eclipse EMF + spring-boot for managing both data structures to be ingested and ingest processes and schedules.</span>
+                        <span class="li">Developped a framework to allow dev of ingest processes based on Apache Hive and Apache Spark</span>
+                        <span class="li">Developped ingest processes using apache Spark</span>
+                        <span class="li">Developped data preparation programs with Apache Spark</span>
+                        <span class="li">PoC'ed "Machine Learning as a service"</span>                     
+-->
+                        Lead to major impacts on
+                      <div class="container">
                             <div class="row">
                                 <div class="col">
                                     <div class="li">Network setup</div>
@@ -610,15 +611,13 @@
                                 </div>
                             </div>
                         </div>
-                        <!-- </div> -->
                     </div>
                     <div class="technos row">Java | scala | python | spark | map-reduce | hortonworks
                     </div>
                 </div>
 
                 <div class="container-fluid xp">
-                    <h3 class="row">Tech Lead + Architect <span class="area"><b
-                                class="blue">&nbsp;|&nbsp;</b>Elasticsearch</span>
+                    <h3 class="row">Tech Lead + Architect <span class="area"><b class="blue">&nbsp;|&nbsp;</b>Elasticsearch <img src="images/maif.png" class="companies"></span>
                     </h3>
                     <div class="dates row">2016</div>
                     <div class="row">Design and setup the enterprise’s ES cluster and near real-time data indexing
@@ -637,7 +636,7 @@
 
                 <div class="container-fluid xp">
                     <h3 class="row">Architect + Tech lead<span class="area"><b class="blue">&nbsp;|&nbsp;</b>Software
-                            engineering</span>
+                            engineering <img src="images/maif.png" class="companies"></span>
                     </h3>
                     <div class="dates row">2011-2015</div>
                     <div class="row">Design and setup the enterprise’s engineering tool suite for managing 1,000+ apps
@@ -664,7 +663,7 @@
 
                 <div class="container-fluid xp">
                     <h3 class="row">Expert <span class="area"><b class="blue">&nbsp;|&nbsp;</b>
-                            Win32 dev</span>
+                            Win32 dev <img src="images/maif.png" class="companies"></span>
                     </h3>
                     <div class="dates row">2011</div>
                     <div class="row">
@@ -681,9 +680,9 @@
                     <div class="technos row">COM/DCOM | Win32 | Delphi | Java</div>
                 </div>
 
-                <div class="container-fluid xp break-page-after no-separator-after-at-print">
+                <div class="container-fluid xp no-separator-after-at-print break-page-after">
                     <h3 class="row">Consultant <span class="area"><b class="blue">&nbsp;|&nbsp;</b>Redesign core legacy
-                            software</span>
+                            software <img src="images/maif.png" class="companies"></span>
                     </h3>
                     <div class="dates row">2010-2011</div>
                     <div class="row">
@@ -704,7 +703,7 @@
 
                 <div class="container-fluid xp">
                     <h3 class="row">Architect + Project manager <span class="area"><b class="blue">&nbsp;|&nbsp;</b>
-                            Unifying UIs on the desktop</span>
+                            Unifying UIs on the desktop <img src="images/maif.png" class="companies"></span>
                     </h3>
                     <div class="dates row">2006-2009</div>
                     <div class="row">
@@ -732,7 +731,7 @@
 
                 <div class="container-fluid xp zzzbreak-page-after">
                     <h3 class="row">Head of Technology<span class="area"><b class="blue">&nbsp;|&nbsp;</b>
-                            SmartJog.com</span>
+                            SmartJog.com <img src="images/smartjog.png" class="companies"></span>
                     </h3>
                     <div class="dates row">2002-2006</div>
                     <div class="row">
@@ -764,7 +763,7 @@
 
                 <div class="container-fluid xp no-separator-after-at-print">
                     <h3 class="row">Developper<span class="area"><b class="blue">&nbsp;|&nbsp;</b>
-                            Unilog / CGI</span>
+                            Unilog / CGI <img src="images/cgi.png" class="companies"></span>
                     </h3>
                     <div class="dates row">2001-2002</div>
                     <div class="row">
@@ -785,6 +784,11 @@
                         Documentum WebPublisher | IBM WebSphere | Weblogic | Eclipse RCP | Swing | Ant</div>
                 </div>
 
+                <!-- <div id="skills-wordcloud" class="right row" style="width:80%">
+                    <img src="images/wordcloud.webp" />
+                </div>  -->
+                
+                <!-- Keep the blue column till the end of the printed page ! -->
                 <div id="final-spacer"></div>
 
             </div>
@@ -792,9 +796,6 @@
 
 
 
-                <!-- <div id="skills-wordcloud" class="right row">
-                    <img src="wordcloud-light.webp" />
-                </div> -->
                 <!-- <div id="skills-content" class="right blue row"></div> -->
                 <div class="progress-box" width="100%">
                     <div>Java</div>
@@ -935,11 +936,64 @@
 
                     <div>&nbsp;</div>
                 </div>
+                
+                <div id="ihavebeen-title" class="title-2 darker row">Have been</div>
+                <div id="ihavebeen-content" class="right row">
+					<div>
+                            <div zzzclass="li">* Tech Leader / Architect for projects up to 20 members and 6500 man.days</div>
+                            <div zzzclass="li">* Consultant for french leading companies</div>
+                            <div zzzclass="li">* Project Manager</div>
+                            <div zzzclass="li">* CTO of a startup that raised 12M€</div>
+                    </div>
+
+                    <div>&nbsp;</div>
+                </div>
+                <div id="ihaveworkedon-title" class="title-2 darker row">Worked on</div>
+                <div id="ihaveworkedon-content" class="right row">
+					<div>
+						<div zzzclass="li">* fast-paced agile projects</div>
+                        <div zzzclass="li">* long-term core projects</div>
+                        <div zzzclass="li">* prototypes</div>
+                        <div zzzclass="li">* software engineering</div>
+                        <div zzzclass="li">* audit</div>
+                    </div>
+
+                    <div>&nbsp;</div>
+                </div>
+                <div id="ihavexp-title" class="title-2 darker row">Experience on</div>
+                <div id="ihavexp-content" class="right row">
+					<div>
+						<div>* web-oriented dev</div>
+                        <div>* desktop/native dev</div>
+                        <div>* big data dev</div>
+                        <div>* AI</div>
+                        <div>* software engineering</div>
+                        <div>* RDBMS</div>
+                    </div>
+
+                    <div>&nbsp;</div>
+                </div>
+                <div id="iam-title" class="title-2 darker row">I am</div>
+                <div id="iam-content" class="right row">
+					<div>
+						<div>* versatile</div>
+                        <div>* adaptable</div>
+                        <div>* a fast learner</div>
+                        <div>* reliable</div>
+                        <div>* involved</div>
+                        <div>* a team worker</div>
+                    </div>
+
+                    <div>&nbsp;</div>
+                </div>
                 <div id="hobbies-title" class="title-2 darker row">Hobbies</div>
                 <div id="hobbies-content" class="right row">
                     <div zzzclass="row">
                         Bee keeping, Sport, Travel, Electronic DIY, Maths, Programming, Cooking...
                     </div>
+
+
+                    <div>&nbsp;</div>
                 </div>
 
 
