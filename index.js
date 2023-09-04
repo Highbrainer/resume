@@ -21,7 +21,7 @@ const EXECUTABLE_BY_OS = {
 }
 
 const exec = EXECUTABLE_BY_OS[os];
-const params = ['--headless', '--run-all-compositor-stages-before-draw', '--print-to-pdf-no-header', '--no-margins', '--print-to-pdf=' + dir + '/resume-backend.pdf', '--disable-gpu', dir + '/resume.html'];
+const params = ['--headless', '--run-all-compositor-stages-before-draw', '--print-to-pdf-no-header', '--no-margins', '--print-to-pdf=' + dir + '/resume-senior-dev.pdf', '--disable-gpu', dir + '/resume.html'];
 const executable = exec[0];
 args = exec.concat(params);
 args.shift();
